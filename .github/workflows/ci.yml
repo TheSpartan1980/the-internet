@@ -38,4 +38,4 @@ jobs:
         sleep 5 &&
         curl http://localhost:9292 -I
     - name: Run the automated tests
-      run: bundle exec rspec spec
+      run: CI=true bundle exec rspec spec
