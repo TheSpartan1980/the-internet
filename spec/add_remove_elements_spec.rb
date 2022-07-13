@@ -11,7 +11,7 @@ describe 'Add/Remove Elements' do
     expect(@add_remove_elements.delete_button_present?).to eql true
   end
 
-  it 'Example 2: Delete and element after adding it' do
+  it 'Example 2: Delete an element after adding it' do
     @add_remove_elements.add_element
     expect(@add_remove_elements.delete_button_present?).to eql true
     @add_remove_elements.delete

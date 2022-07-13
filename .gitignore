@@ -9,3 +9,4 @@ vendor/*
 .rvmrc
 .bundle
 .idea
+reports
