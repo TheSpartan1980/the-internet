@@ -17,6 +17,7 @@ gem 'zurb-foundation'
 
 group :test do
   gem 'rspec', '~> 3.11'
+  gem 'rspec_pretty_html_reporter'
   gem 'selenium-webdriver', '~> 3.142.7'
   gem 'webdrivers'
 end
