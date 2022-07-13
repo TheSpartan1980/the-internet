@@ -39,7 +39,7 @@ jobs:
         curl http://localhost:9292 -I
     - name: Run the automated tests
       run: CI=true bundle exec rspec spec
-    - name: "Tar files and upload artifacts"
+    - name: Tar files and upload artifacts
        if: ${{ success() || failure() }}
        run: tar -cvf rspec-tests-${{ matrix.ruby-version }}.tar reports
     - uses: actions/upload-artifact@v2
